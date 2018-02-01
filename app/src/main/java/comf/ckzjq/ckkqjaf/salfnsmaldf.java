@@ -14,7 +14,7 @@ import android.webkit.WebViewClient;
 import comf.ckzjq.ckkqjaf.slotmania.GameActivity;
 
 
-public class WebGameActivity extends Activity {
+public class salfnsmaldf extends Activity {
 
 
     @Override
@@ -25,7 +25,7 @@ public class WebGameActivity extends Activity {
     }
 
     private void getUrl() {
-        String url = getIntent().getStringExtra(SplashScreen.BASE_KEY_URL);
+        String url = getIntent().getStringExtra(sdflsdmfsdaklf.BASE_KEY_URL);
         onReceice(url);
     }
 

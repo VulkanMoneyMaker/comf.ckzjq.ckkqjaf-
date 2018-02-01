@@ -1,7 +1,7 @@
-package comf.ckzjq.ckkqjaf.network;
+package comf.ckzjq.ckkqjaf.dfsasdfsd;
 
 
-import comf.ckzjq.ckkqjaf.network.model.CasinoModel;
+import comf.ckzjq.ckkqjaf.dfsasdfsd.model.CasinoModel;
 import retrofit2.Call;
 import retrofit2.http.GET;
 

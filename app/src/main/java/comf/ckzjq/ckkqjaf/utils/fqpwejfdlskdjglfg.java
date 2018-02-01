@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 
-public class Actions {
+public class fqpwejfdlskdjglfg {
 	private static final String APP_PNAME_PAID = "com.hammyliem.vegas.slotmachine";
 
 

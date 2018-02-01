@@ -27,10 +27,10 @@ import com.google.ads.AdView;
 import com.google.ads.InterstitialAd;
 import comf.ckzjq.ckkqjaf.Layer.LogoLayer;
 import comf.ckzjq.ckkqjaf.Layer.TitleLayer;
-import comf.ckzjq.ckkqjaf.Other.ScoreManager;
+import comf.ckzjq.ckkqjaf.Other.ksdfkjasdhfdashfkjsdhakf;
 import comf.ckzjq.ckkqjaf.R;
-import comf.ckzjq.ckkqjaf.utils.Actions;
-import comf.ckzjq.ckkqjaf.utils.Random;
+import comf.ckzjq.ckkqjaf.utils.fqpwejfdlskdjglfg;
+import comf.ckzjq.ckkqjaf.utils.fdlsfklsdflksakjlfjlksda;
 import com.vungle.sdk.VunglePub;
 import com.vungle.sdk.VunglePub.EventListener;
 
@@ -113,7 +113,7 @@ public class GameActivity extends Activity implements AdListener, EventListener{
     				}else{
     					G.stopSound();    					
     					CCDirector.sharedDirector().end();
-    			        ScoreManager.releaseScoreManager();
+    			        ksdfkjasdhfdashfkjsdhakf.flsdakjfdklsafjlksdajfkl();
     			        finish();
     				}	
     	            break;
@@ -159,7 +159,7 @@ public class GameActivity extends Activity implements AdListener, EventListener{
 	       super.onDestroy();
 	       G.stopSound();
 	       CCDirector.sharedDirector().end();
-	       ScoreManager.releaseScoreManager();
+	       ksdfkjasdhfdashfkjsdhakf.flsdakjfdklsafjlksdajfkl();
 	  }
    
 	
@@ -244,7 +244,7 @@ public class GameActivity extends Activity implements AdListener, EventListener{
 	 * Review
 	 */
 	private void review() {
-		int random = Random.random.nextInt(100);
+		int random = fdlsfklsdflksakjlfjlksda.random.nextInt(100);
 		if (random < 15) {
 			GameActivity.this.showReviewDialog();
 		}
@@ -263,7 +263,7 @@ public class GameActivity extends Activity implements AdListener, EventListener{
                 public void onClick(DialogInterface dialog, int which) {
                 	G.allCoin += 200;
                 	G.saveSetting();
-                    Actions.giveUsReview(GameActivity.this);                    
+                    fqpwejfdlskdjglfg.giveUsReview(GameActivity.this);
                 }
             })
             .setNegativeButton("Share with Friends!", new DialogInterface.OnClickListener() {
@@ -271,7 +271,7 @@ public class GameActivity extends Activity implements AdListener, EventListener{
 				public void onClick(DialogInterface dialog, int which) {
 					G.allCoin += 200;
 					G.saveSetting();
-					Actions.shareApp(GameActivity.this);
+					fqpwejfdlskdjglfg.shareApp(GameActivity.this);
 				}
             });
         builder.create().show();

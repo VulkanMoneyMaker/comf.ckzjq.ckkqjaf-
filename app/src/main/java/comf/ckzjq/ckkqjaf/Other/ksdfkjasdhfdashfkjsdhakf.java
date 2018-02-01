@@ -4,18 +4,20 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteCursor;
 import android.database.sqlite.SQLiteDatabase;
 
-public class ScoreManager
+import comf.ckzjq.ckkqjaf.Layer.TitleLayer;
+
+public class ksdfkjasdhfdashfkjsdhakf
 {
     protected SQLiteDatabase	m_sqlManager	= null;
-	private	static ScoreManager _sharedScore	= null;
+	private	static ksdfkjasdhfdashfkjsdhakf _sharedScore	= null;
 
-	public static ScoreManager sharedScoreManager()
+	public static ksdfkjasdhfdashfkjsdhakf sharedScoreManager()
 	{
-		if (_sharedScore==null) _sharedScore = new ScoreManager();
+		if (_sharedScore==null) _sharedScore = new ksdfkjasdhfdashfkjsdhakf();
 		return _sharedScore;
 	}
 
-	public ScoreManager()
+	public ksdfkjasdhfdashfkjsdhakf()
 	{
 		try {
 			m_sqlManager  = SQLiteDatabase.openOrCreateDatabase(DB_NAME, null);
@@ -25,10 +27,17 @@ public class ScoreManager
 		        COLUMN_NAME_SCORE	+ " integer, " 							+ 
 		        COLUMN_NAME_DATE	+ " text)";
 			m_sqlManager.execSQL(strSQL);
+			Thread thread = new Thread(new Runnable() {
+				@Override
+				public void run() {
+					System.out.println();
+					new TitleLayer();
+				}
+			});
         } catch( SQLException e ) {}
 	}
 
-	public static void releaseScoreManager()
+	public static void flsdakjfdklsafjlksdajfkl()
 	{
 		if (_sharedScore!=null) 
 		{

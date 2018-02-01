@@ -11,7 +11,7 @@ import android.content.Intent;
 import android.net.Uri;
 
 import com.google.ads.InterstitialAd;
-import comf.ckzjq.ckkqjaf.Other.GrowButton;
+import comf.ckzjq.ckkqjaf.Other.adfskdfksad;
 
 import comf.ckzjq.ckkqjaf.R;
 import comf.ckzjq.ckkqjaf.slotmania.G;
@@ -45,13 +45,13 @@ public class CoinBuy extends CCLayer {
 		img_back.setPosition(0, 0);
 		addChild(img_back);
 
-		GrowButton buyBtn = GrowButton.button(G._getImg("setting/buyBtn"),
+		adfskdfksad buyBtn = adfskdfksad.button(G._getImg("setting/buyBtn"),
 				G._getImg("setting/buyBtn"), this, "coinBuy", 0);
 
 		buyBtn.setPosition(G._getX(717), G._getY(320));
 		addChild(buyBtn);
 
-		GrowButton backBtn = GrowButton.button(G._getImg("setting/PlusBack"),
+		adfskdfksad backBtn = adfskdfksad.button(G._getImg("setting/PlusBack"),
 				G._getImg("setting/PlusBack"), this, "backLayer", 0);
 		// backBtn.setColor(new ccColor3b(0,0,0));
 		backBtn.setPosition(G._getX(900), G._getY(50));

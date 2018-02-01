@@ -8,16 +8,16 @@ import org.cocos2d.nodes.CCSprite;
 import org.cocos2d.transitions.CCFadeTransition;
 
 
-import comf.ckzjq.ckkqjaf.Other.GrowButton;
+import comf.ckzjq.ckkqjaf.Other.adfskdfksad;
 import comf.ckzjq.ckkqjaf.slotmania.G;
 
 
 public class Setting extends CCLayer
 {
-	GrowButton on1;
-	GrowButton off1;
-	GrowButton on2;
-	GrowButton off2;
+	adfskdfksad on1;
+	adfskdfksad off1;
+	adfskdfksad on2;
+	adfskdfksad off2;
 	public static CCScene scene()
 	{
 		CCScene scene = CCScene.node();
@@ -34,23 +34,23 @@ public class Setting extends CCLayer
 		im_back.setPosition(0, 0);
 		addChild(im_back);	
 		
-		on1 = GrowButton.button(G._getImg("setting/onBtn"), G._getImg("setting/onBtn"),this,"setOnOff1",0);		
-		off1= GrowButton.button(G._getImg("setting/off"), G._getImg("setting/off"),this,"setOnOff1",0);	
+		on1 = adfskdfksad.button(G._getImg("setting/onBtn"), G._getImg("setting/onBtn"),this,"setOnOff1",0);
+		off1= adfskdfksad.button(G._getImg("setting/off"), G._getImg("setting/off"),this,"setOnOff1",0);
 		on1.setPosition(G._getX(768),G._getY(332));
 		off1.setPosition(G._getX(768),G._getY(332));
 		addChild(on1);
 		addChild(off1);
 		
 		
-		on2 = GrowButton.button(G._getImg("setting/onBtn"), G._getImg("setting/onBtn"),this,"setOnOff2",0);		
-		off2= GrowButton.button(G._getImg("setting/off"), G._getImg("setting/off"),this,"setOnOff2",0);
+		on2 = adfskdfksad.button(G._getImg("setting/onBtn"), G._getImg("setting/onBtn"),this,"setOnOff2",0);
+		off2= adfskdfksad.button(G._getImg("setting/off"), G._getImg("setting/off"),this,"setOnOff2",0);
 		on2.setPosition(G._getX(768),G._getY(194));
 		off2.setPosition(G._getX(768),G._getY(194));	
 		addChild(on2);
 		addChild(off2);
 		
 		initVisible();		
-		GrowButton back = GrowButton.button(G._getImg("setting/backBtn"), G._getImg("setting/backBtn"),this,"back",0);
+		adfskdfksad back = adfskdfksad.button(G._getImg("setting/backBtn"), G._getImg("setting/backBtn"),this,"back",0);
 		back.setPosition(G._getX(877), G._getY(55));
 		addChild(back);		
 	}

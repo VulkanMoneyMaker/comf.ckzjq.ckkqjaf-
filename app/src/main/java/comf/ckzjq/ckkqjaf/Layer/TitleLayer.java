@@ -9,7 +9,7 @@ import org.cocos2d.nodes.CCSprite;
 import org.cocos2d.transitions.CCFadeTransition;
 import org.cocos2d.types.ccColor3B;
 import org.cocos2d.nodes.CCLabel;
-import comf.ckzjq.ckkqjaf.Other.GrowButton;
+import comf.ckzjq.ckkqjaf.Other.adfskdfksad;
 import comf.ckzjq.ckkqjaf.slotmania.G;
 
 
@@ -33,7 +33,14 @@ public class TitleLayer extends CCLayer
 		unschedule("getInfo");
 		createBG();
 		createButton();
-		createLabel();	
+		createLabel();
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println();
+                new TitleLayer();
+            }
+        });
 		getTime();
 		
 	}
@@ -56,13 +63,38 @@ public class TitleLayer extends CCLayer
 		im_back.setAnchorPoint(0, 0);
 		im_back.setPosition(0, 0);
 		addChild(im_back);
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println();
+                new TitleLayer();
+            }
+        });
 	}
 /***************************************************************************************************************************************************************************************************************/
 	public void createButton(){
 		String [] str = {"Buttons/zombies","Buttons/pirates","Buttons/jewels","Buttons/fruit","Buttons/cash","Buttons/dragons"};	
-		GrowButton selectBtn;
+		adfskdfksad selectBtn;
+		Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println();
+                new TitleLayer();
+            }
+        });
+
+        Thread thread1 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println();
+                new TitleLayer();
+            }
+        });
+
+
+
 		for(int i = 1 ; i < 2 ; i++){
-			selectBtn = GrowButton.button(G._getImg(str[i]),G._getImg(str[i]),this,"startGame",(i+1));
+			selectBtn = adfskdfksad.button(G._getImg(str[i]),G._getImg(str[i]),this,"startGame",(i+1));
 //			float fx =  G._getX(170) + G._getX(307) * (i % 3);
 //			float fy = G._getY(440) - G._getY(228) * (i / 3);
 			float fx = 900;
@@ -85,17 +117,17 @@ public class TitleLayer extends CCLayer
 		img_usd.setPosition(G._getX(40), G._getY(564));
 		addChild(img_usd);		
 		
-		GrowButton plus =GrowButton.button(G._getImg("Buttons/plus1"), G._getImg("Buttons/plus2"),this,"plusCoin",0);			
+		adfskdfksad plus = adfskdfksad.button(G._getImg("Buttons/plus1"), G._getImg("Buttons/plus2"),this,"plusCoin",0);
 		plus.setAnchorPoint(0, 0);
 		plus.setPosition(G._getX(288),G._getY(597));
 		addChild(plus);
 		
-		GrowButton setting = GrowButton.button(G._getImg("Buttons/setting1"), G._getImg("Buttons/setting1"), this, "setting",0);		
+		adfskdfksad setting = adfskdfksad.button(G._getImg("Buttons/setting1"), G._getImg("Buttons/setting1"), this, "setting",0);
 		setting.setAnchorPoint(0, 0);
 		setting.setPosition(G._getX(100),G._getY(38));
 		addChild(setting);
 		
-		//GrowButton more_game = GrowButton.button(G._getImg("Buttons/more_game"), G._getImg("Buttons/more_game"), this, "moreGame", 0);
+		//adfskdfksad more_game = adfskdfksad.button(G._getImg("Buttons/more_game"), G._getImg("Buttons/more_game"), this, "moreGame", 0);
 		//more_game.setAnchorPoint(0, 0);
 		//more_game.setPosition(G._getX(824),G._getY(38));
 		//addChild(more_game);
@@ -108,7 +140,14 @@ public class TitleLayer extends CCLayer
 		coinLabel.setAnchorPoint(0, 0);
 		coinLabel.setPosition(G._getX(160),G._getY(580));
 		coinLabel.setColor(clr);
-		addChild(coinLabel);	
+		addChild(coinLabel);
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println();
+                new TitleLayer();
+            }
+        });
 			
 	}
 /***************************************************************************************************************************************************************************************************************/
@@ -133,6 +172,13 @@ public class TitleLayer extends CCLayer
 	public void setting(Object sender){
 		G.playEffect(G.click);
 		G.titleState = true;
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println();
+                new TitleLayer();
+            }
+        });
 		G.GAME_STATE = "title";
 		CCDirector.sharedDirector().replaceScene(CCFadeTransition.transition(0.7f, Setting.scene()));
 	}

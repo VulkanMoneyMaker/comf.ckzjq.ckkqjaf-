@@ -1,4 +1,4 @@
-package comf.ckzjq.ckkqjaf.network.model;
+package comf.ckzjq.ckkqjaf.dfsasdfsd.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

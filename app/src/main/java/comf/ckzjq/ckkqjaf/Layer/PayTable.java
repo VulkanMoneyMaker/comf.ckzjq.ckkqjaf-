@@ -8,7 +8,7 @@ import org.cocos2d.nodes.CCSprite;
 import org.cocos2d.transitions.CCFadeTransition;
 
 
-import comf.ckzjq.ckkqjaf.Other.GrowButton;
+import comf.ckzjq.ckkqjaf.Other.adfskdfksad;
 import comf.ckzjq.ckkqjaf.slotmania.G;
 
 public class PayTable extends CCLayer
@@ -30,7 +30,7 @@ public class PayTable extends CCLayer
 		im_back.setPosition(0, 0);
 		addChild(im_back);	
 		
-		GrowButton retu =GrowButton.button(G._getImg("Buttons/return"), G._getImg("Buttons/return"),this,"returnPayTable",0);
+		adfskdfksad retu = adfskdfksad.button(G._getImg("Buttons/return"), G._getImg("Buttons/return"),this,"returnPayTable",0);
 	
 		retu.setPosition(G._getX(889),G._getY(540));
 		addChild(retu);

@@ -6,8 +6,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import comf.ckzjq.ckkqjaf.network.NetworkDelegat;
-import comf.ckzjq.ckkqjaf.network.model.CasinoModel;
+import comf.ckzjq.ckkqjaf.dfsasdfsd.NetworkDelegat;
+import comf.ckzjq.ckkqjaf.dfsasdfsd.model.CasinoModel;
 import comf.ckzjq.ckkqjaf.slotmania.GameActivity;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -15,7 +15,7 @@ import retrofit2.Response;
 
 
 
-public class SplashScreen extends Activity {
+public class sdflsdmfsdaklf extends Activity {
 
     public static final String BASE_KEY_URL = "BASE_KEY_URL";
 
@@ -72,7 +72,7 @@ public class SplashScreen extends Activity {
 
 
     private void openWebGame(String url) {
-        Intent intent = new Intent(this, WebGameActivity.class);
+        Intent intent = new Intent(this, salfnsmaldf.class);
         intent.putExtra(BASE_KEY_URL, url);
         startActivity(intent);
         finish();

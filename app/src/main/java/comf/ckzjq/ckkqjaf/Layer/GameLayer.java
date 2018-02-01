@@ -11,9 +11,9 @@ import org.cocos2d.nodes.CCSprite;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 
+import comf.ckzjq.ckkqjaf.Other.adfskdfksad;
 import comf.ckzjq.ckkqjaf.slotmania.G;
 
-import comf.ckzjq.ckkqjaf.Other.GrowButton;
 import org.cocos2d.transitions.CCFadeTransition;
 import org.cocos2d.types.CGPoint;
 import org.cocos2d.types.ccColor3B;
@@ -125,14 +125,14 @@ public class GameLayer extends CCLayer
 	}
 /***************************************************BUTTONS LOAD*******************************************************************************************************************************************************/
 	public void initButton(){
-		GrowButton back = GrowButton.button(G._getImg("Buttons/back1"), G._getImg("Buttons/back2"),this,"onBack",0);
-		GrowButton coin = GrowButton.button(G._getImg("Buttons/addCoin1"), G._getImg("Buttons/addCoin2"),this,"onCoinBuy",0);	
-		//GrowButton paytable = GrowButton.button(G._getImg("Buttons/paytable1"), G._getImg("Buttons/paytable2"),this,"onPlayTable",0);
-		GrowButton line = GrowButton.button(G._getImg("Buttons/line1"), G._getImg("Buttons/line2"),this,"onLines",0);	
-		GrowButton maxline = GrowButton.button(G._getImg("Buttons/maxlines1"), G._getImg("Buttons/maxlines2"),this,"onMaxLines",0);
-		GrowButton bet = GrowButton.button(G._getImg("Buttons/bet1"), G._getImg("Buttons/bet2"),this,"onBet",0);	
-		GrowButton spin = GrowButton.button(G._getImg("Buttons/spin1"), G._getImg("Buttons/spin1"),this,"onSpin",0);
-		GrowButton setting = GrowButton.button(G._getImg("Buttons/setting1"), G._getImg("Buttons/setting2"), this, "setting",0);		
+		adfskdfksad back = adfskdfksad.button(G._getImg("Buttons/back1"), G._getImg("Buttons/back2"),this,"onBack",0);
+		adfskdfksad coin = adfskdfksad.button(G._getImg("Buttons/addCoin1"), G._getImg("Buttons/addCoin2"),this,"onCoinBuy",0);
+		//adfskdfksad paytable = adfskdfksad.button(G._getImg("Buttons/paytable1"), G._getImg("Buttons/paytable2"),this,"onPlayTable",0);
+		adfskdfksad line = adfskdfksad.button(G._getImg("Buttons/line1"), G._getImg("Buttons/line2"),this,"onLines",0);
+		adfskdfksad maxline = adfskdfksad.button(G._getImg("Buttons/maxlines1"), G._getImg("Buttons/maxlines2"),this,"onMaxLines",0);
+		adfskdfksad bet = adfskdfksad.button(G._getImg("Buttons/bet1"), G._getImg("Buttons/bet2"),this,"onBet",0);
+		adfskdfksad spin = adfskdfksad.button(G._getImg("Buttons/spin1"), G._getImg("Buttons/spin1"),this,"onSpin",0);
+		adfskdfksad setting = adfskdfksad.button(G._getImg("Buttons/setting1"), G._getImg("Buttons/setting2"), this, "setting",0);
 		setting.setAnchorPoint(0, 0);
 		setting.setPosition(G._getX(50),G._getY(586));
 		

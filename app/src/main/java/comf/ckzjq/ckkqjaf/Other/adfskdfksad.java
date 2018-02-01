@@ -19,10 +19,10 @@ import android.view.MotionEvent;
 
 import comf.ckzjq.ckkqjaf.slotmania.G;
 
-public class GrowButton extends CCMenu 
+public class adfskdfksad extends CCMenu
 {
 	private float scaleFactor;
-	public GrowButton(CCMenuItem...items)
+	public adfskdfksad(CCMenuItem...items)
 	{
 		super(items);
 		scaleFactor = items[0].getScale();
@@ -38,7 +38,7 @@ public class GrowButton extends CCMenu
 		menu.m_nIndex = index;
 		return menu;
 	}*/
-	public static GrowButton button(String normalImage, String selectImage, CCNode target, String sel,int index)
+	public static adfskdfksad button(String normalImage, String selectImage, CCNode target, String sel, int index)
 	{
 		CCSprite normalSprite = CCSprite.sprite(normalImage);
 		CCSprite selectSprite = CCSprite.sprite(selectImage);
@@ -48,7 +48,7 @@ public class GrowButton extends CCMenu
 		menuItem.setTag(index);
 		G.setScale(menuItem, true);
 		//Button menu = new Button(menuItem);
-		return new GrowButton(menuItem);
+		return new adfskdfksad(menuItem);
 	}
 	
 	public CCMenuItem itemForTouch(MotionEvent event)

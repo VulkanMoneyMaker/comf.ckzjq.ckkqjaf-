@@ -1,4 +1,4 @@
-package comf.ckzjq.ckkqjaf.network;
+package comf.ckzjq.ckkqjaf.dfsasdfsd;
 
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
